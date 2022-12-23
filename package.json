@@ -10,7 +10,7 @@
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "apps": "heroku apps",
-    "selectApp": "heroku logs -a aqueous-cliffs-86966",
+    "selectApp": "heroku logs -a shielded-mountain-64592",
     "build": "git push heroku main"
   },
   "keywords": [],
