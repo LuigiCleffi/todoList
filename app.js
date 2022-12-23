@@ -1,9 +1,7 @@
 import { getDate } from './views/date.js';
-const express = require('express')
-const bodyParser = require("body-parser")
+const express = require('express');
+const bodyParser = require("body-parser");
 
-
-try{
     
 const app = express();
 const port = process.env.PORT || 3000;
@@ -52,8 +50,3 @@ app.use(express.static("public"))
         res.redirect("/work");
     })
 app.listen(port, () => console.log("Running on port " + port))
-
-}catch(err){
-    ErrorCaptureStackTrace(err);
-    console.log(err);
-}
