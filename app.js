@@ -1,6 +1,6 @@
 import { getDate } from './views/date.js';
-import express from 'express'
-import bodyParser from "body-parser"
+import {express} from 'express'
+import {bodyParser} from "body-parser"
 
 const app = express();
 const port = process.env.PORT || 3000;
