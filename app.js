@@ -1,8 +1,7 @@
-const  getDate = require('./views/date.js');
 const express = require('express');
 const bodyParser = require("body-parser");
+const date = require(__dirname+"/date.js");
 
-    
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -15,7 +14,7 @@ app.use(express.static("public"))
     const workItems = [];
     
     app.get('/', (req, res) => {
-        let day = getDate();
+        let day = date.getDate();
     
         res.render('list', {
             listTitle: day,
