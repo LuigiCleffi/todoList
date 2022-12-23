@@ -1,5 +1,5 @@
 //jshint esversion:6
-export function getDate(){
+exports.getDate = function(){
     const today = new Date();
     
     const options = {
