@@ -1,7 +1,9 @@
+//jshint esversion:6
 const express = require('express');
 const bodyParser = require("body-parser");
 const date = require(__dirname+"/date.js");
 
+    
 const app = express();
 const port = process.env.PORT || 3000;
 
