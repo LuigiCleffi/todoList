@@ -1,6 +1,6 @@
 import { getDate } from './views/date.js';
-import {express} from 'express'
-import {bodyParser} from "body-parser"
+const express = require('express')
+const bodyParser = require("body-parser")
 
 
 try{
